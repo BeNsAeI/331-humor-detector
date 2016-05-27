@@ -11,7 +11,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{908E10EC-F74F-4A79-9967-C41FB280AE17}</ProjectGuid>
+    <ProjectGuid>{04ED6A34-26A4-407E-8973-2D37F54742B2}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>My331humordetector</RootNamespace>
   </PropertyGroup>
@@ -77,6 +77,9 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Const.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
