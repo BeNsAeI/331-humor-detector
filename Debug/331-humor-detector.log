@@ -1,4 +1,4 @@
-﻿Build started 5/27/2016 9:17:35 AM.
+﻿Build started 5/27/2016 9:26:20 AM.
      1>Project "c:\Users\tekbots 1\documents\visual studio 2013\Projects\331-humor-detector\331-humor-detector\331-humor-detector.vcxproj" on node 2 (Build target(s)).
      1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(388,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (331-humor-detector.vcxproj).  This can lead to incorrect clean and rebuild behavior.
      1>ClCompile:
