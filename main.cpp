@@ -1,5 +1,6 @@
 #include <iostream>
 #include "Const.h"
+#include "Reader.h"
 
 using std::cin;
 using std::cout;
@@ -17,6 +18,25 @@ int main(int argc, char ** argv)
 		cout << "|          Due: 6/1/2016          |" << endl;
 		cout << "|           Debug  Mode           |" << endl;
 		cout << "+---------------------------------+" << endl;
+	}
+
+	File * myFile = new File("training_text.txt");
+
+	if (DEBUG)
+	{
+		string test = myFile->Read();
+		test = myFile->Read();
+		test = myFile->Read();
+		test = myFile->Read();
+		test = myFile->Read();
+		test = myFile->Read();
+		test = myFile->Read();
+		test = myFile->Read();
+		test = myFile->Read();
+		test = myFile->Read();
+		test = myFile->Read();
+		test = myFile->Read();
+		test = myFile->Read();
 	}
 	return 0;
 }
