@@ -20,10 +20,10 @@ int main(int argc, char ** argv)
 		cout << "+---------------------------------+" << endl;
 	}
 
-	File * myFile = new File("training_text.txt");
-
 	if (DEBUG)
 	{
+		cout << "Read test: " << endl;
+		File * myFile = new File("training_text.txt");
 		string test = myFile->Read();
 		test = myFile->Read();
 		test = myFile->Read();
@@ -37,6 +37,16 @@ int main(int argc, char ** argv)
 		test = myFile->Read();
 		test = myFile->Read();
 		test = myFile->Read();
+		cout << "Write test: " << endl;
+		delete myFile;
+		File * myFileOut = new File("Output_text.txt");
+		bool successful = myFileOut->writeWord("This is a word. ");
+		cout << "Adding word: " << (bool)successful << endl;
+		successful = myFileOut->writeLine("This is a line.");
+		cout << "Adding line: " << (bool)successful << endl;
+		successful = myFileOut->writeLine("This is another line.");
+		cout << "adding another line: " << (bool)successful << endl;
+		delete myFileOut;
 	}
 	return 0;
 }
