@@ -25,27 +25,27 @@ int main(int argc, char ** argv)
 		cout << "+---------------------------------+" << endl;
 	}
 	// Testing the File class for input and output
-	if (DEBUG || FILE_TEST)
+	if ((DEBUG && FILE_TEST) || FILE_TEST)
 	{
 		cout << "**Read test: " << endl;
-		File * myFile = new File("training_text.txt");
-		string test = myFile->Read();
-		test = myFile->Read();
-		test = myFile->Read();
-		test = myFile->Read();
-		test = myFile->Read();
-		test = myFile->Read();
-		test = myFile->Read();
-		test = myFile->Read();
-		test = myFile->Read();
-		test = myFile->Read();
-		test = myFile->Read();
-		test = myFile->Read();
-		test = myFile->Read();
+		File * myFileTest = new File("training_text.txt");
+		string test = myFileTest->Read();
+		test = myFileTest->Read();
+		test = myFileTest->Read();
+		test = myFileTest->Read();
+		test = myFileTest->Read();
+		test = myFileTest->Read();
+		test = myFileTest->Read();
+		test = myFileTest->Read();
+		test = myFileTest->Read();
+		test = myFileTest->Read();
+		test = myFileTest->Read();
+		test = myFileTest->Read();
+		test = myFileTest->Read();
 		cout << endl << "**Read all: " << endl;
-		myFile->ReadAll();
-		cout << endl << "**Sample output for ReadAll in the array: " << myFile->buffer[4] << endl;
-		delete myFile;
+		myFileTest->ReadAll();
+		cout << endl << "**Sample output for ReadAll in the array: " << myFileTest->buffer[4] << endl;
+		delete myFileTest;
 		cout << endl << "**Write test: " << endl;
 		File * myFileOut = new File("Output_text.txt");
 		bool successful = myFileOut->writeWord("This is a word. ");
@@ -57,7 +57,58 @@ int main(int argc, char ** argv)
 		delete myFileOut;
 	}
 
+	//Reading and processing the training set:
+	//- Creating the File object for reading
+	File * myFileRead = new File("training_text.txt");
 
+	//- Reading the training set in a buffer
+	myFileRead->ReadAll();
+	if (DEBUG)
+		cout << endl << "** The training set has " << myFileRead->index << " items." << endl << endl;
 
+	//- Processing the training set:
+	//- - Creating the Sarcasm array
+	int * Training = new int[myFileRead->index];
+
+	// - - Populating the Sarcasm array and Removing punctuation:
+	int QC = 0;		//Counting quotation marks, if it is even and the character is a 0 or 1 , it is the sarcasm score
+	for (int i = 0; i < myFileRead->index; i++)
+	{
+		for (int j = 0; j < myFileRead->buffer[i].size(); j++)
+		{
+			if (!((myFileRead->buffer[i][j] >= (char)(65) && myFileRead->buffer[i][j] <= (char)(90)) ||
+				(myFileRead->buffer[i][j] >= (char)(97) && myFileRead->buffer[i][j] <= (char)(122)) ||
+				(myFileRead->buffer[i][j] == ' ')))
+			{
+				if (myFileRead->buffer[i][j] == '"')
+					QC++;
+				if ((QC % 2 == 0) && (myFileRead->buffer[i][j] == '0' || myFileRead->buffer[i][j] == '1'))
+				{
+					if (myFileRead->buffer[i][j] == '0')
+						Training[i] = 0;
+					else
+						Training[i] = 1;
+					if (TRAINING)
+						cout << endl << "** " << myFileRead->buffer[i] << " is " << Training[i] << endl;
+				}
+				if (DEBUG)
+					cout << myFileRead->buffer[i][j] << " ";
+
+				// - - - Deleting punctuation
+				myFileRead->buffer[i][j] = '\0';
+			}
+		}
+		if (DEBUG)
+			cout << endl << myFileRead->buffer[i] << endl;
+	}
+	if (DEBUG)
+		cout << endl;
+
+	system("cls");
+	system("clear");
+	system("echo Training set is processed. ");
+
+	//CLEANUP;
+	delete myFileRead;
 	return 0;
 }
