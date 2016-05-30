@@ -1,4 +1,8 @@
 #include <iostream>
+#include <fstream>
+#include <cstring>
+#include <string>
+#include <string.h>
 #include "Const.h"
 #include "Reader.h"
 
@@ -9,7 +13,8 @@ using std::string;
 
 int main(int argc, char ** argv)
 {
-	if (DEBUG)
+	// Display of information
+	if (DEBUG || INFO)
 	{
 		cout << "+---------------------------------+" << endl;
 		cout << "|             CS  331             |" << endl;
@@ -19,10 +24,10 @@ int main(int argc, char ** argv)
 		cout << "|           Debug  Mode           |" << endl;
 		cout << "+---------------------------------+" << endl;
 	}
-
-	if (DEBUG)
+	// Testing the File class for input and output
+	if (DEBUG || FILE_TEST)
 	{
-		cout << "Read test: " << endl;
+		cout << "**Read test: " << endl;
 		File * myFile = new File("training_text.txt");
 		string test = myFile->Read();
 		test = myFile->Read();
@@ -37,16 +42,22 @@ int main(int argc, char ** argv)
 		test = myFile->Read();
 		test = myFile->Read();
 		test = myFile->Read();
-		cout << "Write test: " << endl;
+		cout << endl << "**Read all: " << endl;
+		myFile->ReadAll();
+		cout << endl << "**Sample output for ReadAll in the array: " << myFile->buffer[4] << endl;
 		delete myFile;
+		cout << endl << "**Write test: " << endl;
 		File * myFileOut = new File("Output_text.txt");
 		bool successful = myFileOut->writeWord("This is a word. ");
-		cout << "Adding word: " << (bool)successful << endl;
+		cout << endl << "**Adding word: " << (bool)successful << endl;
 		successful = myFileOut->writeLine("This is a line.");
-		cout << "Adding line: " << (bool)successful << endl;
+		cout << endl << "**Adding line: " << (bool)successful << endl;
 		successful = myFileOut->writeLine("This is another line.");
-		cout << "adding another line: " << (bool)successful << endl;
+		cout << endl << "**adding another line: " << (bool)successful << endl;
 		delete myFileOut;
 	}
+
+
+
 	return 0;
 }
