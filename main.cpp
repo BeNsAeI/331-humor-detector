@@ -7,6 +7,7 @@
 #include <string.h>
 #include "Const.h"
 #include "Reader.h"
+#include "Bag.h"
 
 using std::cin;
 using std::cout;
