@@ -163,7 +163,8 @@ int main(int argc, char ** argv)
 		string tmp;
 		int j = 0;
 		stringstream ssin(line);
-		while (ssin.good()){
+		while (ssin.good())
+		{
 			ssin >> tmp;
 			// Removing spaces
 			for (int i = 0; i<tmp.length(); i++)
