@@ -216,6 +216,13 @@ int main(int argc, char ** argv)
 				cout << endl;
 		}
 	}
+
+	for (int i = 0; i < Vocabulary.size(); i++)
+	{
+		FVPYT[i] = float(float(FVPYT[i]) / float(TS));
+		FVPYF[i] = float(float(FVPYF[i]) / float(TNS));
+	}
+
 	system("cls");
 	system("clear");
 	system("echo \"Saved to file\"");
@@ -227,6 +234,81 @@ int main(int argc, char ** argv)
 
 	//Reading in the samples
 	system("echo \"Reading in the next file\"");
+	
+	File *myFile = new File("test_text.txt");
+	//File *myFile = new File("training_text.txt");		//Testing the accuracy on training set (gets all of it right)
+	myFile->ReadAll();
+	// cleaning the words
+	QC = 0;
+	for (int i = 0; i < myFile->index; i++)
+	{
+		for (int j = 0; j < myFileRead->buffer[i].size(); j++)
+		{
+			if (!((myFile->buffer[i][j] >= (char)(65) && myFile->buffer[i][j] <= (char)(90)) ||
+				(myFile->buffer[i][j] >= (char)(97) && myFile->buffer[i][j] <= (char)(122)) ||
+				(myFile->buffer[i][j] == ' ')))
+			{
+				if (myFile->buffer[i][j] == '"')
+					QC++;
+				if ((QC % 2 == 0) && (myFile->buffer[i][j] == '0' || myFile->buffer[i][j] == '1'))
+				{
+					if (myFile->buffer[i][j] == '0')
+						Training[i] = 0;
+					else
+						Training[i] = 1;
 
+				}
+
+
+				// - - - Deleting punctuation
+				myFile->buffer[i][j] = ' ';
+			}
+		}
+	}
+	cout << "Processing the new wordlist." << endl;
+	cout << myFile->index << endl;
+	for (int i = 1; i < myFile->index; i++)
+	{
+		float PT = float(PY);
+		float PF = float(PNY);
+		string line = myFile->buffer[i];
+		string tmp;
+		int j = 0;
+		stringstream ssin(line);
+		while (ssin.good()){
+			ssin >> tmp;
+			// Removing spaces
+			for (int i = 0; i < tmp.length(); i++)
+			if (tmp[i] == ' ') tmp.erase(i, 1);
+
+			// making the word lower case
+			if (tmp[0] >= 65)
+			{
+				for (int k = 0; k < tmp.size(); k++)
+				{
+					if (tmp[k] < 97)
+						tmp[k] = (char)(tmp[k] + 32);
+				}
+				// word "tmp" check here
+				if (DEBUG)
+					cout << tmp << endl;
+				wordIndex = Vocabulary.find(tmp);
+				int distance = std::distance(Vocabulary.begin(), wordIndex);
+				PT = PT * float(FVPYT[distance]);
+				PF = PF * float(FVPYF[distance]);
+			}
+
+			++j;
+		}
+
+		if (PT > PF)
+			cout << PT << " vs " << PF << ": Sarcastic." << endl;
+		else
+			cout << PT << " vs " << PF << ": Not sarcastic." << endl;
+
+		if (DEBUG)
+			;// std::for_each(Vocabulary.begin(), Vocabulary.end(), &print);
+	}
+	delete myFile;
 	return 0;
 }
