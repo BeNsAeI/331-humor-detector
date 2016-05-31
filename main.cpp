@@ -222,6 +222,7 @@ int main(int argc, char ** argv)
 		FVPYT[i] = float(float(FVPYT[i]) / float(TS));
 		FVPYF[i] = float(float(FVPYF[i]) / float(TNS));
 	}
+	delete myFileWrite;
 
 	system("cls");
 	system("clear");
@@ -234,10 +235,18 @@ int main(int argc, char ** argv)
 
 	//Reading in the samples
 	system("echo \"Reading in the next file\"");
-	
-	File *myFile = new File("test_text.txt");
-	//File *myFile = new File("training_text.txt");		//Testing the accuracy on training set (gets all of it right)
+	string fileName;
+	fileName = "test_text.txt";
+	//fileName = "training_text.txt";		//Testing the accuracy on training set (gets all of it right)
+	File *myFile = new File(fileName);
+
 	myFile->ReadAll();
+	string tmp;
+	tmp = "results.txt";
+	//tmp = "results_" +fileName;
+	File *result = new File(tmp);
+	string out = "File name : " + fileName + ":";
+	result->writeLine(out);
 	// cleaning the words
 	QC = 0;
 	int * Accuracy = new int[myFileRead->index];
@@ -308,17 +317,26 @@ int main(int argc, char ** argv)
 			if (Accuracy[i] == 1)
 				verdict++;
 			cout << PT << " vs " << PF << ": Sarcastic." << endl;
+			string out = SSTR(PT) + " vs " + SSTR(PF) + ": Sarcastic.";
+			result->writeLine(out);
 		}
 		else
 		{
 			if (Accuracy[i] == 0)
 				verdict++;
 			cout << PT << " vs " << PF << ": Not sarcastic." << endl;
+			string out = SSTR(PT) + " vs " + SSTR(PF) + ": Not sarcastic.";
+			result->writeLine(out);
 		}
 		if (DEBUG)
 			;// std::for_each(Vocabulary.begin(), Vocabulary.end(), &print);
 	}
 	cout << "Accuracy is: " << (float(float(verdict) / float(myFile->index)) * float(100)) << "%." << endl;
+	out = "Accuracy is: " + SSTR((float(float(verdict) / float(myFile->index)) * float(100))) + "%.";
+	result->writeLine(out);
+
 	delete myFile;
+	delete result;
+	
 	return 0;
 }

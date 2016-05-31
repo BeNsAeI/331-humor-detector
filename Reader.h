@@ -14,7 +14,7 @@ public:
 	void ReadAll();
 	bool writeWord(std::string word);
 	bool writeLine(std::string line);
-	std::string buffer[5000];
+	std::string buffer[500];
 	int index;
 private:
 	int limit;

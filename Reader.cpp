@@ -13,7 +13,7 @@ File::File(string address)
 	myFileOut = new ofstream();
 	myFileIn = new ifstream(address.c_str());
 	myFileOut->open(address.c_str(), ios::app);
-	limit = 5000;
+	limit = 500;
 
 }
 
