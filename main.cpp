@@ -83,7 +83,7 @@ int main(int argc, char ** argv)
 
 	system("cls");
 	system("clear");
-	system("echo Training set is processed. ");
+	system("echo \"Training set is processed.\" ");
 
 	// - - truning the strings to vocabulary:
 	std::set<std::string> Vocabulary;
@@ -119,7 +119,7 @@ int main(int argc, char ** argv)
 	}
 	system("cls");
 	system("clear");
-	system("echo Bag is built. ");
+	system("echo \"Bag is built. \"");
 	
 	//Saving to preprocessed_train.txt
 	File *myFileWrite = new File("preprocessed_train.txt");
@@ -218,15 +218,15 @@ int main(int argc, char ** argv)
 	}
 	system("cls");
 	system("clear");
-	system("echo Saved to file");
-	system("echo Pre-Process Done");
+	system("echo \"Saved to file\"");
+	system("echo \"Pre-Process Done\"");
 
 	//CLEANUP after Pre-process
-	system("echo Cleaning the memory");
+	system("echo \"Cleaning the memory\"");
 	delete myFileRead;
 
 	//Reading in the samples
-	system("echo Reading in the file");
+	system("echo \"Reading in the next file\"");
 
 	return 0;
 }

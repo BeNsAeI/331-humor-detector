@@ -1,4 +1,4 @@
-﻿Build started 5/31/2016 1:03:32 AM.
+﻿Build started 5/31/2016 10:05:55 AM.
      1>Project "C:\Users\Behnam\documents\visual studio 2013\Projects\331-humor-detector\331-humor-detector\331-humor-detector.vcxproj" on node 2 (Build target(s)).
      1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(381,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (331-humor-detector.vcxproj).  This can lead to incorrect clean and rebuild behavior.
      1>ClCompile:
@@ -14,19 +14,19 @@
      1>c:\users\behnam\documents\visual studio 2013\projects\331-humor-detector\331-humor-detector\main.cpp(162): warning C4258: 'i' : definition from the for loop is ignored; the definition from the enclosing scope is used
                  c:\users\behnam\documents\visual studio 2013\projects\331-humor-detector\331-humor-detector\main.cpp(158) : definition of 'i' ignored
                  c:\users\behnam\documents\visual studio 2013\projects\331-humor-detector\331-humor-detector\main.cpp(156) : definition of 'i' used
-     1>c:\users\behnam\documents\visual studio 2013\projects\331-humor-detector\331-humor-detector\main.cpp(169): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\behnam\documents\visual studio 2013\projects\331-humor-detector\331-humor-detector\main.cpp(176): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\behnam\documents\visual studio 2013\projects\331-humor-detector\331-humor-detector\main.cpp(184): warning C4258: 'i' : definition from the for loop is ignored; the definition from the enclosing scope is used
-                 c:\users\behnam\documents\visual studio 2013\projects\331-humor-detector\331-humor-detector\main.cpp(169) : definition of 'i' ignored
+     1>c:\users\behnam\documents\visual studio 2013\projects\331-humor-detector\331-humor-detector\main.cpp(170): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\behnam\documents\visual studio 2013\projects\331-humor-detector\331-humor-detector\main.cpp(177): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\behnam\documents\visual studio 2013\projects\331-humor-detector\331-humor-detector\main.cpp(185): warning C4258: 'i' : definition from the for loop is ignored; the definition from the enclosing scope is used
+                 c:\users\behnam\documents\visual studio 2013\projects\331-humor-detector\331-humor-detector\main.cpp(170) : definition of 'i' ignored
                  c:\users\behnam\documents\visual studio 2013\projects\331-humor-detector\331-humor-detector\main.cpp(156) : definition of 'i' used
-     1>c:\users\behnam\documents\visual studio 2013\projects\331-humor-detector\331-humor-detector\main.cpp(184): warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
-     1>c:\users\behnam\documents\visual studio 2013\projects\331-humor-detector\331-humor-detector\main.cpp(196): warning C4258: 'i' : definition from the for loop is ignored; the definition from the enclosing scope is used
+     1>c:\users\behnam\documents\visual studio 2013\projects\331-humor-detector\331-humor-detector\main.cpp(185): warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+     1>c:\users\behnam\documents\visual studio 2013\projects\331-humor-detector\331-humor-detector\main.cpp(197): warning C4258: 'i' : definition from the for loop is ignored; the definition from the enclosing scope is used
                  c:\users\behnam\documents\visual studio 2013\projects\331-humor-detector\331-humor-detector\main.cpp(158) : definition of 'i' ignored
                  c:\users\behnam\documents\visual studio 2013\projects\331-humor-detector\331-humor-detector\main.cpp(156) : definition of 'i' used
-     1>c:\users\behnam\documents\visual studio 2013\projects\331-humor-detector\331-humor-detector\main.cpp(199): warning C4258: 'i' : definition from the for loop is ignored; the definition from the enclosing scope is used
+     1>c:\users\behnam\documents\visual studio 2013\projects\331-humor-detector\331-humor-detector\main.cpp(200): warning C4258: 'i' : definition from the for loop is ignored; the definition from the enclosing scope is used
                  c:\users\behnam\documents\visual studio 2013\projects\331-humor-detector\331-humor-detector\main.cpp(158) : definition of 'i' ignored
                  c:\users\behnam\documents\visual studio 2013\projects\331-humor-detector\331-humor-detector\main.cpp(156) : definition of 'i' used
-     1>c:\users\behnam\documents\visual studio 2013\projects\331-humor-detector\331-humor-detector\main.cpp(201): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\behnam\documents\visual studio 2013\projects\331-humor-detector\331-humor-detector\main.cpp(202): warning C4018: '<' : signed/unsigned mismatch
        Link:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Behnam\documents\visual studio 2013\Projects\331-humor-detector\Debug\331-humor-detector.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Behnam\documents\visual studio 2013\Projects\331-humor-detector\Debug\331-humor-detector.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Behnam\documents\visual studio 2013\Projects\331-humor-detector\Debug\331-humor-detector.lib" /MACHINE:X86 Debug\Bag.obj
          Debug\main.obj
@@ -36,4 +36,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:00.68
+Time Elapsed 00:00:01.41
