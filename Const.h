@@ -6,4 +6,7 @@
 #define FILE_TEST 0
 #define INFO 1
 
+#define SSTR( x ) dynamic_cast< std::ostringstream & >( \
+	(std::ostringstream() << std::dec << x)).str()
+
 #endif

@@ -20,6 +20,7 @@ public:
 	void add(std::string word, int value);
 	void print();
 	struct Item * item[26];
+	bool sarcasm;
 private:
 	int size[26];
 };

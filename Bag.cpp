@@ -11,6 +11,7 @@ using std::endl;
 
 Bag::Bag()
 {
+	sarcasm = false;
 	for (int i = 0; i < 26; i++)
 	{
 		item[i] = new struct Item[1024];
@@ -59,16 +60,20 @@ void Bag::print()
 	{
 		for (int j = 0; j < size[i]; j++)
 		{
-			cout << item[i][j].word << "(" << item[i][j].value << ")" << ", ";
+			cout << item[i][j].word << "(" << item[i][j].value << ")";
+			if (j + 1 != size[i])
+				cout << ", ";
 		}
 		cout << endl;
 	}
+	if (sarcasm)
+		cout << "This is sarcastic" << endl;
+	else
+		cout << "This is not sarcastic" << endl;
 }
 
 Bag::~Bag()
 {
 	for (int i = 0; i < 26; i++)
-	{
 		delete item[i];
-	}
 }

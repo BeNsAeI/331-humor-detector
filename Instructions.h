@@ -17,7 +17,6 @@ Pre-processing step
 
 - The vocabulary consists of the set of all the words that are in the training data
 - The vocabulary will now be the features of your training data
-- Keep the vocabulary in alphabetical order
 - Convert the training AND test data into a set of features
 - Let M be the size of your vocabulary
 - For each sentence, convert it into a feature vector of size M+1
@@ -66,3 +65,4 @@ Run your classifier by training on training_text.txt then testing on test_text.t
 **All of your source code and the results.txt file. Zip everything up with a zip program. To hand in your assignment, go to the TEACH electronic handin site: https://secure.engr.oregonstate.edu:8000
 **Pre-processing step (25 points)
 **Naive Bayes classifier (25 points)
+*/

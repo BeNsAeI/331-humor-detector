@@ -5,14 +5,25 @@
 #include <cstring>
 #include <string>
 #include <string.h>
+#include <sstream>
+#include <algorithm>
+#include <set>
+
 #include "Const.h"
 #include "Reader.h"
-#include "Bag.h"
 
 using std::cin;
 using std::cout;
 using std::endl;
 using std::string;
+using std::stringstream;
+using std::remove_if;
+using std::remove;
+
+void print(const std::string& item)
+{
+	std::cout << item << std::endl;
+}
 
 int main(int argc, char ** argv)
 {
@@ -26,38 +37,6 @@ int main(int argc, char ** argv)
 		cout << "|          Due: 6/1/2016          |" << endl;
 		cout << "|           Debug  Mode           |" << endl;
 		cout << "+---------------------------------+" << endl;
-	}
-	// Testing the File class for input and output
-	if ((DEBUG && FILE_TEST) || FILE_TEST)
-	{
-		cout << "**Read test: " << endl;
-		File * myFileTest = new File("training_text.txt");
-		string test = myFileTest->Read();
-		test = myFileTest->Read();
-		test = myFileTest->Read();
-		test = myFileTest->Read();
-		test = myFileTest->Read();
-		test = myFileTest->Read();
-		test = myFileTest->Read();
-		test = myFileTest->Read();
-		test = myFileTest->Read();
-		test = myFileTest->Read();
-		test = myFileTest->Read();
-		test = myFileTest->Read();
-		test = myFileTest->Read();
-		cout << endl << "**Read all: " << endl;
-		myFileTest->ReadAll();
-		cout << endl << "**Sample output for ReadAll in the array: " << myFileTest->buffer[4] << endl;
-		delete myFileTest;
-		cout << endl << "**Write test: " << endl;
-		File * myFileOut = new File("Output_text.txt");
-		bool successful = myFileOut->writeWord("This is a word. ");
-		cout << endl << "**Adding word: " << (bool)successful << endl;
-		successful = myFileOut->writeLine("This is a line.");
-		cout << endl << "**Adding line: " << (bool)successful << endl;
-		successful = myFileOut->writeLine("This is another line.");
-		cout << endl << "**adding another line: " << (bool)successful << endl;
-		delete myFileOut;
 	}
 
 	//Reading and processing the training set:
@@ -91,25 +70,124 @@ int main(int argc, char ** argv)
 						Training[i] = 0;
 					else
 						Training[i] = 1;
-					if (TRAINING)
-						cout << endl << "** " << myFileRead->buffer[i] << " is " << Training[i] << endl;
+
 				}
-				if (DEBUG)
-					cout << myFileRead->buffer[i][j] << " ";
+
 
 				// - - - Deleting punctuation
-				myFileRead->buffer[i][j] = '\0';
+				myFileRead->buffer[i][j] = ' ';
 			}
 		}
-		if (DEBUG)
-			cout << endl << myFileRead->buffer[i] << endl;
 	}
-	if (DEBUG)
-		cout << endl;
+
 
 	system("cls");
 	system("clear");
 	system("echo Training set is processed. ");
+
+	// - - truning the strings to vocabulary:
+	std::set<std::string> Vocabulary;
+	for (int i = 0; i < myFileRead->index; i++)
+	{
+		string line = myFileRead->buffer[i];
+		string tmp;
+		int j = 0;
+		stringstream ssin(line);
+		while (ssin.good()){
+			ssin >> tmp;
+			// Removing spaces
+			for (int i = 0; i<tmp.length(); i++)
+			if (tmp[i] == ' ') tmp.erase(i, 1);
+
+			//putting it in the vocabulary
+			//tmp is the word to be inserted to the vocabulary
+			if (tmp[0] >= 65)
+			{
+				for (int k = 0; k < tmp.size(); k++)
+				{
+					if (tmp[k] < 97)
+						tmp[k] = (char)(tmp[k] + 32);
+				}
+				Vocabulary.insert(tmp);
+			}
+
+			++j;
+		}
+		if (DEBUG)
+			;// std::for_each(Vocabulary.begin(), Vocabulary.end(), &print);
+
+	}
+	system("cls");
+	system("clear");
+	system("echo Bag is built. ");
+	
+	//Saving to preprocessed_train.txt
+	File *myFileWrite = new File("preprocessed_train.txt");
+
+	std::set<std::string>::iterator wordIndex;
+	int *FeaturVector = new int[Vocabulary.size()];
+	int *FVPYT = new int[Vocabulary.size()];
+	int *FVPYF = new int[Vocabulary.size()];
+
+	for (int i = 0; i < Vocabulary.size(); i++)
+	{
+		
+			FeaturVector[i]= 0;
+			FVPYT[i] = 0;
+			FVPYF[i] = 0;
+	}
+
+	for (int i = 0; i < myFileRead->index; i++)
+	{
+		for (int i = 0; i < Vocabulary.size(); i++)
+		{
+			FeaturVector[i] = 0;
+		}
+		string line = myFileRead->buffer[i];
+		string tmp;
+		int j = 0;
+		stringstream ssin(line);
+		while (ssin.good()){
+			ssin >> tmp;
+			// Removing spaces
+			for (int i = 0; i<tmp.length(); i++)
+			if (tmp[i] == ' ') tmp.erase(i, 1);
+
+			//putting it in the vocabulary
+			//tmp is the word to be inserted to the vocabulary
+			if (tmp[0] >= 65)
+			{
+				for (int k = 0; k < tmp.size(); k++)
+				{
+					if (tmp[k] < 97)
+						tmp[k] = (char)(tmp[k] + 32);
+				}
+				wordIndex = Vocabulary.find(tmp);
+				int distance = std::distance(Vocabulary.begin(),wordIndex);
+				FeaturVector[distance] = 1;
+			}
+
+			++j;
+		}
+		FeaturVector[Vocabulary.size()] = Training[i];
+		if (i>0)
+		{
+			for (int j = 0; j < Vocabulary.size() + 1; j++)
+			{
+				myFileWrite->writeWord(SSTR(FeaturVector[j]));
+				//cout << FeaturVector[j];
+				if (j != Vocabulary.size())
+					myFileWrite->writeWord(", ");
+					//cout << ", ";
+			}
+			myFileWrite->writeWord("\n");
+			//cout << endl;
+		}
+	}
+	system("cls");
+	system("clear");
+	system("echo Saved to file");
+
 
 	//CLEANUP;
 	delete myFileRead;
