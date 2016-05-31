@@ -242,7 +242,8 @@ int main(int argc, char ** argv)
 
 	myFile->ReadAll();
 	string tmp;
-	tmp = "results.txt";
+	tmp = "Log.txt";
+	//tmp = "results.txt";
 	//tmp = "results_" +fileName;
 	File *result = new File(tmp);
 	string out = "File name : " + fileName + ":";

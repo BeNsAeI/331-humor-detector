@@ -1,4 +1,4 @@
-﻿Build started 5/31/2016 12:28:19 PM.
+﻿Build started 5/31/2016 12:32:08 PM.
      1>Project "C:\Users\Behnam\documents\visual studio 2013\Projects\331-humor-detector\331-humor-detector\331-humor-detector.vcxproj" on node 2 (Build target(s)).
      1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(381,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (331-humor-detector.vcxproj).  This can lead to incorrect clean and rebuild behavior.
      1>ClCompile:
@@ -28,10 +28,10 @@
                  c:\users\behnam\documents\visual studio 2013\projects\331-humor-detector\331-humor-detector\main.cpp(156) : definition of 'i' used
      1>c:\users\behnam\documents\visual studio 2013\projects\331-humor-detector\331-humor-detector\main.cpp(202): warning C4018: '<' : signed/unsigned mismatch
      1>c:\users\behnam\documents\visual studio 2013\projects\331-humor-detector\331-humor-detector\main.cpp(220): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\behnam\documents\visual studio 2013\projects\331-humor-detector\331-humor-detector\main.cpp(255): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\behnam\documents\visual studio 2013\projects\331-humor-detector\331-humor-detector\main.cpp(292): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\behnam\documents\visual studio 2013\projects\331-humor-detector\331-humor-detector\main.cpp(298): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\behnam\documents\visual studio 2013\projects\331-humor-detector\331-humor-detector\main.cpp(333): warning C4390: ';' : empty controlled statement found; is this the intent?
+     1>c:\users\behnam\documents\visual studio 2013\projects\331-humor-detector\331-humor-detector\main.cpp(256): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\behnam\documents\visual studio 2013\projects\331-humor-detector\331-humor-detector\main.cpp(293): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\behnam\documents\visual studio 2013\projects\331-humor-detector\331-humor-detector\main.cpp(299): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\behnam\documents\visual studio 2013\projects\331-humor-detector\331-humor-detector\main.cpp(334): warning C4390: ';' : empty controlled statement found; is this the intent?
        Link:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Behnam\documents\visual studio 2013\Projects\331-humor-detector\Debug\331-humor-detector.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Behnam\documents\visual studio 2013\Projects\331-humor-detector\Debug\331-humor-detector.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Behnam\documents\visual studio 2013\Projects\331-humor-detector\Debug\331-humor-detector.lib" /MACHINE:X86 Debug\Bag.obj
          Debug\main.obj
@@ -41,4 +41,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:00.71
+Time Elapsed 00:00:00.64
