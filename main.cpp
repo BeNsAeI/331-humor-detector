@@ -187,7 +187,7 @@ int main(int argc, char ** argv)
 	system("cls");
 	system("clear");
 	system("echo Saved to file");
-
+	system("echo Pre-Process Done");
 
 	//CLEANUP;
 	delete myFileRead;
