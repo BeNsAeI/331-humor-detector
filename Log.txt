@@ -180,3 +180,549 @@ File name : test_text.txt:
 0 vs 0: Not sarcastic.
 0 vs 0: Not sarcastic.
 Accuracy is: 64.0884%.
+File name : test_text.txt:
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0.000117495 vs 0: Sarcastic.
+0 vs 0: Not sarcastic.
+7.39323e-009 vs 0: Sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+5.99306e-014 vs 0: Sarcastic.
+0 vs 0: Not sarcastic.
+1.13363e-008 vs 0: Sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 3.8222e-021: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+1.21135e-011 vs 0: Sarcastic.
+5.89487e-006 vs 0: Sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 2.4488e-011: Not sarcastic.
+5.54913e-015 vs 0: Sarcastic.
+0.00740217 vs 0: Sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+1.33012e-006 vs 0: Sarcastic.
+5.33057e-005 vs 0: Sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+1.96647e-012 vs 0: Sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 1.95794e-009: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+4.49257e-014 vs 0: Sarcastic.
+2.92515e-007 vs 3.22303e-009: Sarcastic.
+4.42983e-013 vs 0: Sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+4.10657e-006 vs 0: Sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+4.95962e-007 vs 0: Sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+3.96291e-011 vs 0: Sarcastic.
+0 vs 0: Not sarcastic.
+1.47865e-006 vs 0: Sarcastic.
+0 vs 0: Not sarcastic.
+0.248619 vs 0: Sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+7.05369e-006 vs 0: Sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+3.7314e-005 vs 0: Sarcastic.
+0 vs 0: Not sarcastic.
+2.21923e-007 vs 0: Sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+3.65002e-015 vs 0: Sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0.0191567 vs 0: Sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+2.43058e-009 vs 0: Sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+2.85931e-011 vs 0: Sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+3.08587e-006 vs 0: Sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+Accuracy is: 64.0884%.
+File name : test_text.txt:
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0.000117495 vs 0: Sarcastic.
+0 vs 0: Not sarcastic.
+7.39323e-009 vs 0: Sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+5.99306e-014 vs 0: Sarcastic.
+0 vs 0: Not sarcastic.
+1.13363e-008 vs 0: Sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 3.8222e-021: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+1.21135e-011 vs 0: Sarcastic.
+5.89487e-006 vs 0: Sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 2.4488e-011: Not sarcastic.
+5.54913e-015 vs 0: Sarcastic.
+0.00740217 vs 0: Sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+1.33012e-006 vs 0: Sarcastic.
+5.33057e-005 vs 0: Sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+1.96647e-012 vs 0: Sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 1.95794e-009: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+4.49257e-014 vs 0: Sarcastic.
+2.92515e-007 vs 3.22303e-009: Sarcastic.
+4.42983e-013 vs 0: Sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+4.10657e-006 vs 0: Sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+4.95962e-007 vs 0: Sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+3.96291e-011 vs 0: Sarcastic.
+0 vs 0: Not sarcastic.
+1.47865e-006 vs 0: Sarcastic.
+0 vs 0: Not sarcastic.
+0.248619 vs 0: Sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+7.05369e-006 vs 0: Sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+3.7314e-005 vs 0: Sarcastic.
+0 vs 0: Not sarcastic.
+2.21923e-007 vs 0: Sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+3.65002e-015 vs 0: Sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0.0191567 vs 0: Sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+2.43058e-009 vs 0: Sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+2.85931e-011 vs 0: Sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+3.08587e-006 vs 0: Sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+Accuracy is: 64.0884%.
+File name : test_text.txt:
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0.000117495 vs 0: Sarcastic.
+0 vs 0: Not sarcastic.
+7.39323e-009 vs 0: Sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+5.99306e-014 vs 0: Sarcastic.
+0 vs 0: Not sarcastic.
+1.13363e-008 vs 0: Sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 3.8222e-021: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+1.21135e-011 vs 0: Sarcastic.
+5.89487e-006 vs 0: Sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 2.4488e-011: Not sarcastic.
+5.54913e-015 vs 0: Sarcastic.
+0.00740217 vs 0: Sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+1.33012e-006 vs 0: Sarcastic.
+5.33057e-005 vs 0: Sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+1.96647e-012 vs 0: Sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 1.95794e-009: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+4.49257e-014 vs 0: Sarcastic.
+2.92515e-007 vs 3.22303e-009: Sarcastic.
+4.42983e-013 vs 0: Sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+4.10657e-006 vs 0: Sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+4.95962e-007 vs 0: Sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+3.96291e-011 vs 0: Sarcastic.
+0 vs 0: Not sarcastic.
+1.47865e-006 vs 0: Sarcastic.
+0 vs 0: Not sarcastic.
+0.248619 vs 0: Sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+7.05369e-006 vs 0: Sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+3.7314e-005 vs 0: Sarcastic.
+0 vs 0: Not sarcastic.
+2.21923e-007 vs 0: Sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+3.65002e-015 vs 0: Sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0.0191567 vs 0: Sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+2.43058e-009 vs 0: Sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+2.85931e-011 vs 0: Sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+3.08587e-006 vs 0: Sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+0 vs 0: Not sarcastic.
+Accuracy is: 64.0884%.

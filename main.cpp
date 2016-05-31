@@ -250,10 +250,10 @@ int main(int argc, char ** argv)
 	result->writeLine(out);
 	// cleaning the words
 	QC = 0;
-	int * Accuracy = new int[myFileRead->index];
+	int * Accuracy = new int[myFile->index];
 	for (int i = 0; i < myFile->index; i++)
 	{
-		for (int j = 0; j < myFileRead->buffer[i].size(); j++)
+		for (int j = 0; j < myFile->buffer[i].size(); j++)
 		{
 			if (!((myFile->buffer[i][j] >= (char)(65) && myFile->buffer[i][j] <= (char)(90)) ||
 				(myFile->buffer[i][j] >= (char)(97) && myFile->buffer[i][j] <= (char)(122)) ||
