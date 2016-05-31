@@ -221,7 +221,12 @@ int main(int argc, char ** argv)
 	system("echo Saved to file");
 	system("echo Pre-Process Done");
 
-	//CLEANUP;
+	//CLEANUP after Pre-process
+	system("echo Cleaning the memory");
 	delete myFileRead;
+
+	//Reading in the samples
+	system("echo Reading in the file");
+
 	return 0;
 }
