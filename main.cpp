@@ -240,6 +240,7 @@ int main(int argc, char ** argv)
 	myFile->ReadAll();
 	// cleaning the words
 	QC = 0;
+	int * Accuracy = new int[myFileRead->index];
 	for (int i = 0; i < myFile->index; i++)
 	{
 		for (int j = 0; j < myFileRead->buffer[i].size(); j++)
@@ -253,9 +254,9 @@ int main(int argc, char ** argv)
 				if ((QC % 2 == 0) && (myFile->buffer[i][j] == '0' || myFile->buffer[i][j] == '1'))
 				{
 					if (myFile->buffer[i][j] == '0')
-						Training[i] = 0;
+						Accuracy[i] = 0;
 					else
-						Training[i] = 1;
+						Accuracy[i] = 1;
 
 				}
 
@@ -267,6 +268,7 @@ int main(int argc, char ** argv)
 	}
 	cout << "Processing the new wordlist." << endl;
 	cout << myFile->index << endl;
+	int verdict = 0;
 	for (int i = 1; i < myFile->index; i++)
 	{
 		float PT = float(PY);
@@ -300,15 +302,23 @@ int main(int argc, char ** argv)
 
 			++j;
 		}
-
+		
 		if (PT > PF)
+		{
+			if (Accuracy[i] == 1)
+				verdict++;
 			cout << PT << " vs " << PF << ": Sarcastic." << endl;
+		}
 		else
+		{
+			if (Accuracy[i] == 0)
+				verdict++;
 			cout << PT << " vs " << PF << ": Not sarcastic." << endl;
-
+		}
 		if (DEBUG)
 			;// std::for_each(Vocabulary.begin(), Vocabulary.end(), &print);
 	}
+	cout << "Accuracy is: " << (float(float(verdict) / float(myFile->index)) * float(100)) << "%." << endl;
 	delete myFile;
 	return 0;
 }
