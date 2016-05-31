@@ -126,8 +126,24 @@ int main(int argc, char ** argv)
 
 	std::set<std::string>::iterator wordIndex;
 	int *FeaturVector = new int[Vocabulary.size()];
-	int *FVPYT = new int[Vocabulary.size()];
-	int *FVPYF = new int[Vocabulary.size()];
+	float *FVPYT = new float[Vocabulary.size()];
+	float *FVPYF = new float[Vocabulary.size()];
+	int TS = 0;
+	int TNS = 0;
+	for(int i = 0; i < myFileRead->index; i++)
+	{
+		if (bool(Training[i]))
+			TS++;
+		else
+			TNS++;
+	}
+	float PY = 0;
+	for (int i = 1; i < myFileRead->index; i++)
+	{
+		PY = PY + Training[i];
+	}
+	PY = PY / myFileRead->index;
+	float PNY = 1 - PY;
 
 	for (int i = 0; i < Vocabulary.size(); i++)
 	{
@@ -165,23 +181,38 @@ int main(int argc, char ** argv)
 				wordIndex = Vocabulary.find(tmp);
 				int distance = std::distance(Vocabulary.begin(),wordIndex);
 				FeaturVector[distance] = 1;
+				if (bool(Training[i]))
+				{
+					FVPYT[distance] = FVPYT[distance] + 1;
+				}
+				else
+				{
+					FVPYF[distance] = FVPYF[distance] + 1;
+				}
 			}
 
 			++j;
 		}
 		FeaturVector[Vocabulary.size()] = Training[i];
+		FVPYT[Vocabulary.size()] = 1;
+		FVPYF[Vocabulary.size()] = 0;
 		if (i>0)
 		{
 			for (int j = 0; j < Vocabulary.size() + 1; j++)
 			{
 				myFileWrite->writeWord(SSTR(FeaturVector[j]));
-				//cout << FeaturVector[j];
+				if (DEBUG)
+					cout << FVPYT[j];
 				if (j != Vocabulary.size())
+				{
 					myFileWrite->writeWord(", ");
-					//cout << ", ";
+					if (DEBUG)
+						cout << ", ";
+				}
 			}
 			myFileWrite->writeWord("\n");
-			//cout << endl;
+			if (DEBUG)
+				cout << endl;
 		}
 	}
 	system("cls");
